@@ -136,7 +136,17 @@ nav {
 .banner img{
     width: 95%;
 }
-
+/* online games section */
+.online-games{
+    text-align: center;
+    margin-top: 50px;
+}
+.online-games-card{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin: 50px 120px;
+}
 
 /* responsive styles */
 /* mobile device */
