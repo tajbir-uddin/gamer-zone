@@ -173,13 +173,16 @@ nav {
     gap: 24px;
     margin: 50px 120px;
 }
+.card img{
+    width: 95%;
+}
 
 /* play Instantly section */
 .play-instantly {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    gap: 100px;
+    /* align-items: center; */
+    gap: 200px;
     margin: 50px 120px;
 }
 
@@ -195,6 +198,19 @@ nav {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.play-in-description {
+    color: #534C64;
+    text-align: right;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#play-in-img-2 {
+    position: relative;
+    bottom: 250px;
+    right: 145px;
 }
 
 /* responsive styles */
@@ -244,6 +260,35 @@ nav {
         margin: 10px 20px;
     }
 
+    /* play instantly */
+    .play-instantly {
+        flex-direction: column;
+        gap: 20px;
+        margin: 50px 20px;
+    }
+
+    .play-in-content {
+        text-align: center;
+    }
+
+    .play-in-description {
+        text-align: center;
+    }
+
+    .play-in-images img {
+        width: 90%;
+    }
+
+    .play-in-images {
+        margin: 50px 20px;
+    }
+
+    #play-in-img-2 {
+        width: 50%;
+        position: relative;
+        bottom: 120px;
+        right: 40px;
+    }
 }
 
 /* medium device */
@@ -281,5 +326,38 @@ nav {
         align-items: center;
         gap: 24px;
         margin: 10px 20px;
+    }
+
+    /* play instantly */
+    .play-instantly {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        margin: 50px 100px;
+    }
+
+    .play-in-content {
+        text-align: center;
+    }
+
+    .play-in-description {
+        text-align: center;
+        text-wrap: wrap;
+    }
+
+    .play-in-images img {
+        width: 95%;
+    }
+
+    .play-in-images {
+        margin: 50px 20px;
+    }
+
+    #play-in-img-2 {
+        width: 50%;
+        position: relative;
+        bottom: 200px;
+        right: 80px;
     }
 }
