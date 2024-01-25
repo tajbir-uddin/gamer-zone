@@ -213,6 +213,28 @@ nav {
     right: 145px;
 }
 
+/* Games section */
+.games, .games-2{
+    display: flex;
+    gap: 16px;
+}
+.games-section{
+    margin: 50px 120px;
+}
+.upper-line{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.lower-line{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
 /* responsive styles */
 /* mobile device */
 @media screen and (max-width:576px) {
