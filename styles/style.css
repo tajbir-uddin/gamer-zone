@@ -80,7 +80,7 @@ nav {
     justify-content: space-between;
     gap: 70px;
     align-items: center;
-    margin: 0px 240px;
+    padding: 0px 240px;
 }
 
 .banner-content {
@@ -151,8 +151,48 @@ nav {
     .nav-menu {
         flex-direction: column;
     }
+
     /* banner */
-    .banner{
+    .banner {
         flex-direction: column-reverse;
+        gap: 70px;
+        align-items: center;
+        padding: 0px 20px;
+    }
+    .banner img{
+        width: 80%;
+    }
+    .banner-img{
+        text-align: center;
+    }
+    .banner-btn {
+        padding: 16px 24px;
+        margin-right: 10px;
+    }
+    
+}
+
+/* medium device */
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    nav {
+        flex-direction: column;
+        box-shadow: none;
+        padding: 35px 40px;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    /* banner */
+    .banner {
+        flex-direction: column-reverse;
+        gap: 70px;
+        align-items: center;
+        padding: 0px 20px;
+    }
+    .banner img{
+        width: 80%;
+    }
+    .banner-img{
+        text-align: center;
     }
 }
