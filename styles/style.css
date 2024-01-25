@@ -133,20 +133,49 @@ nav {
 #banner-btn-2 {
     background: #4EC5F7;
 }
-.banner img{
+
+.banner img {
     width: 95%;
 }
+
 /* online games section */
-.online-games{
+.online-games {
     text-align: center;
     margin-top: 50px;
+    margin: 0px 120px;
 }
-.online-games-card{
+
+.online-games-title {
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.funny-video {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.online-games-description {
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.online-games-card {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
     gap: 24px;
     margin: 50px 120px;
 }
+/* .card-description{
+    text-wrap: wrap;
+} */
 
 /* responsive styles */
 /* mobile device */
@@ -171,17 +200,29 @@ nav {
         align-items: center;
         padding: 0px 20px;
     }
-    .banner img{
+
+    .banner img {
         width: 80%;
     }
-    .banner-img{
+
+    .banner-img {
         text-align: center;
     }
+
     .banner-btn {
         padding: 16px 24px;
         margin-right: 10px;
     }
-    
+    /* online games */
+    .online-games-card {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        margin: 10px 20px;
+    }
+
 }
 
 /* medium device */
@@ -194,6 +235,7 @@ nav {
         justify-content: center;
         align-items: center;
     }
+
     /* banner */
     .banner {
         flex-direction: column-reverse;
@@ -201,10 +243,21 @@ nav {
         align-items: center;
         padding: 0px 20px;
     }
-    .banner img{
+
+    .banner img {
         width: 80%;
     }
-    .banner-img{
+
+    .banner-img {
         text-align: center;
+    }
+    /* online games */
+    .online-games-card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        margin: 10px 20px;
     }
 }
