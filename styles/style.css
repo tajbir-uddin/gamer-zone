@@ -230,6 +230,12 @@ nav {
     gap: 10px;
 }
 
+.games:hover {
+    border-radius: 50px;
+    border: 1.5px solid var(--Linear, #FF42A5);
+    background: #FFF;
+}
+
 /* responsive styles */
 /* mobile device */
 @media screen and (max-width:576px) {
@@ -309,15 +315,11 @@ nav {
 
     /* games */
     .games-section {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: 5px;
-        margin: 50px 20px;
-    }
-
-    .games,
-    .games-2 img {
-        border-radius: 50px;
-        background: #FFF;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 20px;
     }
 }
 
@@ -390,6 +392,7 @@ nav {
         bottom: 200px;
         right: 80px;
     }
+
     /* games */
     .games-section {
         grid-template-columns: repeat(3, 1fr);
