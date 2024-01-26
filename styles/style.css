@@ -173,7 +173,8 @@ nav {
     gap: 24px;
     margin: 50px 120px;
 }
-.card img{
+
+.card img {
     width: 95%;
 }
 
@@ -214,25 +215,19 @@ nav {
 }
 
 /* Games section */
-.games, .games-2{
+.games,
+.games-2 {
     display: flex;
     gap: 16px;
 }
-.games-section{
-    margin: 50px 120px;
-}
-.upper-line{
-    display: flex;
-    gap: 20px;
-    justify-content: center;
+
+.games-section {
+    margin: 50px 80px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: space-around;
     align-items: center;
-    margin-bottom: 30px;
-}
-.lower-line{
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
+    gap: 10px;
 }
 
 /* responsive styles */
@@ -311,6 +306,19 @@ nav {
         bottom: 120px;
         right: 40px;
     }
+
+    /* games */
+    .games-section {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+        margin: 50px 20px;
+    }
+
+    .games,
+    .games-2 img {
+        border-radius: 50px;
+        background: #FFF;
+    }
 }
 
 /* medium device */
@@ -382,4 +390,11 @@ nav {
         bottom: 200px;
         right: 80px;
     }
+    /* games */
+    .games-section {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
+        margin: 50px 20px;
+    }
+
 }
