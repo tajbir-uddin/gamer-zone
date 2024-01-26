@@ -236,6 +236,75 @@ nav {
     background: #FFF;
 }
 
+/* footer section */
+footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #0B0223;
+}
+
+footer .logo-title {
+    color: #FFF;
+}
+
+footer .logo {
+    align-items: center;
+    justify-content: center;
+    margin: 0px 120px;
+}
+
+.footer-anchors {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    padding: 10px 120px;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-a {
+    text-decoration: none;
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 120px;
+}
+
+.social-media {
+    color: #FFF;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 10px 120px;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 20px;
+}
+
+.about-links {
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.copyright {
+    color: rgba(255, 255, 255, 0.60);
+    text-align: center;
+    font-weight: 500;
+}
+
 /* responsive styles */
 /* mobile device */
 @media screen and (max-width:576px) {
@@ -321,6 +390,15 @@ nav {
         justify-content: center;
         margin: 20px 20px;
     }
+    /* footer */
+    .footer-anchors {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 10px 20px;
+    }
+    .about {
+        grid-template-columns: repeat(2, 1fr);;
+        padding: 10px 20px;
+    }
 }
 
 /* medium device */
@@ -397,7 +475,15 @@ nav {
     .games-section {
         grid-template-columns: repeat(3, 1fr);
         gap: 5px;
-        margin: 50px 20px;
+        margin: 20px 20px;
     }
-
+     /* footer */
+     .footer-anchors {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 10px 80px;
+    }
+    .about {
+        grid-template-columns: repeat(2, 1fr);;
+        padding: 10px 80px;
+    }
 }
